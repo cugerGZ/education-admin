@@ -2,31 +2,31 @@ import request from "@/utils/request";
 
 export function fetchList(query) {
   return request({
-    url: "/vue-element-admin/course/list",
+    url: "/vue-element-admin/column/list",
     method: "get",
     params: query
   });
 }
 
-export function createCourse(data) {
+export function createColumn(data) {
   return request({
-    url: "/vue-element-admin/course/create",
+    url: "/vue-element-admin/column/create",
     method: "post",
     data
   });
 }
 
-export function updateCourse(data) {
+export function updateColumn(data) {
   return request({
-    url: "/vue-element-admin/course/update",
+    url: "/vue-element-admin/column/update",
     method: "post",
     data
   });
 }
 
-export function deleteCourse(data) {
+export function deleteColumn(data) {
   return request({
-    url: "/vue-element-admin/course/delete",
+    url: "/vue-element-admin/column/delete",
     method: "post",
     data
   });

@@ -6,8 +6,22 @@ const role = require("./role");
 const article = require("./article");
 const search = require("./remote-search");
 const course = require("./course");
+const media = require("./media");
+const audio = require("./audio");
+const video = require("./video");
+const column = require("./column");
 
-const mocks = [...user, ...role, ...article, ...search, ...course];
+const mocks = [
+  ...user,
+  ...role,
+  ...article,
+  ...search,
+  ...course,
+  ...media,
+  ...audio,
+  ...video,
+  ...column
+];
 
 // for front mock
 // please use it cautiously, it will redefine XMLHttpRequest,
